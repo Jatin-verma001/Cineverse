@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to CineVerse - Stream Unlimited Anime</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="login-body">
+    <!-- Background Video/Image -->
+    <div class="login-background">
+        <div class="background-overlay"></div>
+        <div class="background-pattern"></div>
+        <div class="floating-elements">
+            <div class="float-element element-1"></div>
+            <div class="float-element element-2"></div>
+            <div class="float-element element-3"></div>
+            <div class="float-element element-4"></div>
+        </div>
+    </div>
+
+    <!-- Main Login Container -->
+    <div class="login-container">
+        <!-- Left Side - Branding -->
+        <div class="login-left">
+            <div class="brand-section">
+                <div class="logo-container">
+                    <h1 class="brand-logo">CineVerse</h1>
+                    <span class="brand-tagline">Stream • Discover • Enjoy</span>
+                </div>
+                
+                <div class="welcome-content">
+                    <h2 class="welcome-title">Welcome Back!</h2>
+                    <p class="welcome-subtitle">Access thousands of anime series, movies, and exclusive content</p>
+                    
+                    <div class="feature-highlights">
+                        <div class="feature-item">
+                            <div class="feature-icon">🎬</div>
+                            <span>10,000+ Anime Episodes</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📱</div>
+                            <span>Watch Anywhere</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <span>HD Streaming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side - Login Form -->
+        <div class="login-right">
+            <div class="form-container">
+                <!-- Login Form -->
+                <div class="auth-form active" id="loginForm">
+                    <div class="form-header">
+                        <h3>Sign In</h3>
+                        <p>Continue your anime journey</p>
+                    </div>
+
+                    <form class="login-form" id="loginFormElement">
+                        <div class="input-group">
+                            <div class="input-wrapper">
+                                <input type="email" id="loginEmail" required>
+                                <label for="loginEmail">Email Address</label>
+                                <div class="input-line"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-wrapper">
+                                <input type="password" id="loginPassword" required>
+                                <label for="loginPassword">Password</label>
+                                <div class="input-line"></div>
+                                <button type="button" class="password-toggle" id="togglePassword">
+                                    <span class="eye-icon">👁️</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="rememberMe">
+                                <span class="checkmark"></span>
+                                Remember me
+                            </label>
+                            <a href="#" class="forgot-link">Forgot Password?</a>
+                        </div>
+
+                        <button type="submit" class="auth-submit-btn">
+                            <span>Sign In</span>
+                            <div class="btn-glow"></div>
+                        </button>
+
+                        <div class="social-login">
+                            <p>Or continue with</p>
+                            <div class="social-buttons">
+                                <button type="button" class="social-btn google">
+                                    <svg viewBox="0 0 24 24" width="20" height="20">
+                                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                    </svg>
+                                    Google
+                                </button>
+                                <button type="button" class="social-btn discord">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="#5865F2">
+                                        <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0189 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0189 1.3332-.946 2.4189-2.1569 2.4189Z"/>
+                                    </svg>
+                                    Discord
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="form-footer">
+                        <p>New to CineVerse? <button type="button" class="switch-form" id="showSignup">Create Account</button></p>
+                    </div>
+                </div>
+
+                <!-- Signup Form -->
+                <div class="auth-form" id="signupForm">
+                    <div class="form-header">
+                        <h3>Create Account</h3>
+                        <p>Join the ultimate anime experience</p>
+                    </div>
+
+                    <form class="signup-form" id="signupFormElement">
+                        <div class="input-group">
+                            <div class="input-wrapper">
+                                <input type="text" id="signupName" required>
+                                <label for="signupName">Full Name</label>
+                                <div class="input-line"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-wrapper">
+                                <input type="email" id="signupEmail" required>
+                                <label for="signupEmail">Email Address</label>
+                                <div class="input-line"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-wrapper">
+                                <input type="password" id="signupPassword" required>
+                                <label for="signupPassword">Password</label>
+                                <div class="input-line"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-wrapper">
+                                <input type="password" id="confirmPassword" required>
+                                <label for="confirmPassword">Confirm Password</label>
+                                <div class="input-line"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="agreeTerms" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#">Terms of Service</a>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="auth-submit-btn">
+                            <span>Create Account</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </form>
+
+                    <div class="form-footer">
+                        <p>Already have an account? <button type="button" class="switch-form" id="showLogin">Sign In</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Enhanced form functionality
+        class LoginPageManager {
+            constructor() {
+                this.initializeElements();
+                this.bindEvents();
+                this.initializeAnimations();
+            }
+
+            initializeElements() {
+                this.loginForm = document.getElementById('loginForm');
+                this.signupForm = document.getElementById('signupForm');
+                this.showSignup = document.getElementById('showSignup');
+                this.showLogin = document.getElementById('showLogin');
+                this.togglePassword = document.getElementById('togglePassword');
+                this.loginFormElement = document.getElementById('loginFormElement');
+                this.signupFormElement = document.getElementById('signupFormElement');
+            }
+
+            bindEvents() {
+                // Form switching
+                this.showSignup.addEventListener('click', () => this.switchToSignup());
+                this.showLogin.addEventListener('click', () => this.switchToLogin());
+
+                // Password toggle
+                if (this.togglePassword) {
+                    this.togglePassword.addEventListener('click', () => this.togglePasswordVisibility());
+                }
+
+                // Form submissions
+                this.loginFormElement.addEventListener('submit', (e) => this.handleLogin(e));
+                this.signupFormElement.addEventListener('submit', (e) => this.handleSignup(e));
+
+                // Input animations
+                this.initializeInputAnimations();
+            }
+
+            switchToSignup() {
+                this.loginForm.classList.remove('active');
+                this.signupForm.classList.add('active');
+                this.addSlideAnimation();
+            }
+
+            switchToLogin() {
+                this.signupForm.classList.remove('active');
+                this.loginForm.classList.add('active');
+                this.addSlideAnimation();
+            }
+
+            addSlideAnimation() {
+                const formContainer = document.querySelector('.form-container');
+                formContainer.style.transform = 'translateX(-10px)';
+                formContainer.style.opacity = '0.8';
+                
+                setTimeout(() => {
+                    formContainer.style.transform = 'translateX(0)';
+                    formContainer.style.opacity = '1';
+                }, 150);
+            }
+
+            togglePasswordVisibility() {
+                const passwordInput = document.getElementById('loginPassword');
+                const eyeIcon = this.togglePassword.querySelector('.eye-icon');
+                
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    eyeIcon.textContent = '🙈';
+                } else {
+                    passwordInput.type = 'password';
+                    eyeIcon.textContent = '👁️';
+                }
+            }
+
+            initializeInputAnimations() {
+                const inputs = document.querySelectorAll('input[type="text"], input[type="email"], input[type="password"]');
+                
+                inputs.forEach(input => {
+                    input.addEventListener('focus', () => {
+                        const wrapper = input.closest('.input-wrapper');
+                        wrapper.classList.add('focused');
+                    });
+
+                    input.addEventListener('blur', () => {
+                        const wrapper = input.closest('.input-wrapper');
+                        if (!input.value) {
+                            wrapper.classList.remove('focused');
+                        }
+                    });
+
+                    input.addEventListener('input', () => {
+                        const wrapper = input.closest('.input-wrapper');
+                        if (input.value) {
+                            wrapper.classList.add('has-value');
+                        } else {
+                            wrapper.classList.remove('has-value');
+                        }
+                    });
+                });
+            }
+
+            initializeAnimations() {
+                // Floating elements animation
+                const floatingElements = document.querySelectorAll('.float-element');
+                floatingElements.forEach((element, index) => {
+                    element.style.animationDelay = `${index * 0.5}s`;
+                });
+
+                // Page load animation
+                setTimeout(() => {
+                    document.body.classList.add('loaded');
+                }, 100);
+            }
+
+            handleLogin(e) {
+                e.preventDefault();
+                const email = document.getElementById('loginEmail').value;
+                const password = document.getElementById('loginPassword').value;
+
+                if (!email || !password) {
+                    this.showNotification('Please fill in all fields', 'error');
+                    return;
+                }
+
+                // Simulate login process
+                const submitBtn = e.target.querySelector('.auth-submit-btn');
+                this.setButtonLoading(submitBtn, true);
+
+                setTimeout(() => {
+                    localStorage.setItem('isLoggedIn', 'true');
+                    localStorage.setItem('userEmail', email);
+                    this.showNotification('Login successful! Redirecting...', 'success');
+                    
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 1500);
+                }, 2000);
+            }
+
+            handleSignup(e) {
+                e.preventDefault();
+                const name = document.getElementById('signupName').value;
+                const email = document.getElementById('signupEmail').value;
+                const password = document.getElementById('signupPassword').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+                const agreeTerms = document.getElementById('agreeTerms').checked;
+
+                if (!name || !email || !password || !confirmPassword) {
+                    this.showNotification('Please fill in all fields', 'error');
+                    return;
+                }
+
+                if (password !== confirmPassword) {
+                    this.showNotification('Passwords do not match', 'error');
+                    return;
+                }
+
+                if (!agreeTerms) {
+                    this.showNotification('Please agree to the Terms of Service', 'error');
+                    return;
+                }
+
+                // Simulate signup process
+                const submitBtn = e.target.querySelector('.auth-submit-btn');
+                this.setButtonLoading(submitBtn, true);
+
+                setTimeout(() => {
+                    localStorage.setItem('isLoggedIn', 'true');
+                    localStorage.setItem('userEmail', email);
+                    localStorage.setItem('userName', name);
+                    this.showNotification('Account created successfully! Redirecting...', 'success');
+                    
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 1500);
+                }, 2000);
+            }
+
+            setButtonLoading(button, loading) {
+                if (loading) {
+                    button.classList.add('loading');
+                    button.disabled = true;
+                    button.querySelector('span').textContent = 'Please wait...';
+                } else {
+                    button.classList.remove('loading');
+                    button.disabled = false;
+                }
+            }
+
+            showNotification(message, type) {
+                const notification = document.createElement('div');
+                notification.className = `notification ${type}`;
+                notification.textContent = message;
+                
+                Object.assign(notification.style, {
+                    position: 'fixed',
+                    top: '20px',
+                    right: '20px',
+                    backgroundColor: type === 'error' ? '#ff6b6b' : '#51cf66',
+                    color: 'white',
+                    padding: '15px 20px',
+                    borderRadius: '10px',
+                    zIndex: '10000',
+                    fontSize: '14px',
+                    fontWeight: '500',
+                    boxShadow: '0 10px 25px rgba(0,0,0,0.2)',
+                    transform: 'translateX(100%)',
+                    transition: 'transform 0.3s ease'
+                });
+
+                document.body.appendChild(notification);
+
+                setTimeout(() => {
+                    notification.style.transform = 'translateX(0)';
+                }, 100);
+
+                setTimeout(() => {
+                    notification.style.transform = 'translateX(100%)';
+                    setTimeout(() => {
+                        notification.remove();
+                    }, 300);
+                }, 3000);
+            }
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new LoginPageManager();
+        });
+    </script>
+</body>
+</html>
